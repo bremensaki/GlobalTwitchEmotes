@@ -1,24 +1,23 @@
 {
-  "title": "Global Twitch Emotes",
-  "name": "gte",
-  "id": "gte@melalawi.com",
-  "icon": "resource://gte-at-melalawi-dot-com/logo/128.png",
-  "version": "1.1.1021",
-  "description": "Twitch culture wherever you go! This extension replaces all Twitch.tv emote phrases with their actual emoticons.",
-  "main": "index.js",
-  "author": "melalawi",
-  "engines": {
-    "firefox": ">=38.0a1",
-    "fennec": ">=38.0a1"
-  },
-  "license": "MIT",
-  "keywords": [
-    "jetpack"
-  ],
-  "preferences": [{
-	"type": "control",
-	"label": "Modify Settings",
-	"name": "accessSettings",
-	"title": "Settings"
-  }]
+    "name": "global_twitch_emotes",
+    "version": "1.2.0",
+    "description": "Global Twitch Emotes",
+    "main": "app.js",
+    "devDependencies": {
+        "browserify": "13.0.1",
+        "clone": "1.0.2",
+        "fs": ">=0.0.2",
+        "fs-extra": "0.30.0",
+        "jade": "1.11.0",
+        "root-path": "0.2.0",
+        "zip-dir": "1.0.2"
+    },
+    "scripts": {
+        "build":"",
+        "build_chrome": "node chrome/build.js",
+        "build-firefox": "",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "melalawi",
+    "license": "ISC"
 }
