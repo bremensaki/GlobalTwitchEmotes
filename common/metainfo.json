@@ -1,6 +1,6 @@
 {
-    "name": "Global Twitch Emotes",
-    "short_name": "GTE",
-    "description": "Twitch culture wherever you go! This extension replaces all Twitch.tv emote phrases with their actual emoticons.",
-    "version": "1.2.0"
+    "name": "Jabberzac Universal Emotes",
+    "short_name": "JZAC",
+    "description": "This extension replaces all instances of Jabberzac emotes with their expected representation.",
+    "version": "1.0.0"
 }
