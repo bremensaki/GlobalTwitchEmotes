@@ -1,7 +1,7 @@
 {
-    "name": "global_twitch_emotes",
-    "version": "1.2.0",
-    "description": "Global Twitch Emotes",
+    "name": "jabberzac_emotes",
+    "version": "1.0.0",
+    "description": "Jabberzac Universal Emotes",
     "main": "app.js",
     "devDependencies": {
         "browserify": "13.0.1",
@@ -18,6 +18,6 @@
         "build-firefox": "",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "melalawi",
+    "author": "bremensaki",
     "license": "ISC"
 }

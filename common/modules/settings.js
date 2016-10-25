@@ -55,7 +55,7 @@ storage.loadAll(function(data) {
     // TODO: Actually load settings
     // TODO: Do not refresh emotes if they are newer than 14 days old
     settings = settingsSchema();
-    emoteParser.parseTwitchTVGlobalEmotes({
+    emoteParser.parseJabberzacEmotes({
         success: function(list) {
             emotes = list;
         }, error: function(response) {

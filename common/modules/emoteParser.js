@@ -2,8 +2,8 @@
 
 var httpRequest = require('../modules/httpRequest');
 
-function parseTwitchTVGlobalEmotes(callbacks) {
-    httpRequest('GET', 'https://twitchemotes.com/api_cache/v2/global.json', {
+function parseJabberzacEmotes(callbacks) {
+    httpRequest('GET', 'https://jabberzac.org/emote/emotepack.json', {
         success: function(responseText) {
             var json = JSON.parse(responseText);
             var emotes = json.emotes;
@@ -26,9 +26,9 @@ function parseTwitchTVGlobalEmotes(callbacks) {
 }
 
 function generateEmote(emoteName, emoteURL, emoteChannel) {
-    return 'img class="GTEEmote" data-gtenode="true" title="' + emoteName + '" alt="' + emoteName + '" src="' + emoteURL + '" data-GTEChannel="' + emoteChannel + '"';
+    return 'img class="jzacemote" title="' + emoteName + '" alt="' + emoteName + '" src="' + emoteURL + '"';
 }
 
 module.exports = {
-    parseTwitchTVGlobalEmotes: parseTwitchTVGlobalEmotes
+    parseJabberzacEmotes: parseJabberzacEmotes
 };
